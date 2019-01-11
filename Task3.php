@@ -1,7 +1,12 @@
 <?php
-	$number = 340;
-	$sum = $number[0] + $number[1];
-	print $number[0];
-	if($sum == 70)
-		print "It's your lucky day today";
+    $number=9997;
+    print "Number=".$number."<br>";
+    $sum=0;
+    while($number>0.9){
+        $sum+=$number%10;
+        $number/=10;
+    }
+    if($sum==34){
+        print "Sum=".$sum."<br>"."it`s your lucky Day";
+    }
 ?>
